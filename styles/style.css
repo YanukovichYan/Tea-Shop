@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/*Три слайдера*/
+.first {
+    background-image: url("../images/image1.png");
+    height: 640px;
+}
+
+.second {
+    background-image: url("../images/image2.png");
+    height: 640px;
+}
+
+.second-info {
+    max-width: 525px;
+}
+
+.third {
+    background-image: url("../images/image3.png");
+    height: 640px;
+}
+
+.third-info {
+    max-width: 594px;
+}
+
+/*Кружочки под слайдером*/
+.slick-dots {
+    display: none!important;
+}
+
+/*Стрелочки слайдера*/
+.slick-prev {
+    width: 41px;
+    height: 40px;
+    left: 15px;
+    z-index: 99999;
+    background-image: url("../images/arrow-left.png");
+}
+
+.slick-prev:before {
+    color: transparent;
+}
+
+.slick-prev:hover {
+    background-image: url("../images/arrow-left.png");
+    width: 41px;
+    height: 40px;
+}
+
+.slick-next {
+    right: 15px;
+    z-index: 99999;
+    width: 41px;
+    height: 40px;
+    background-image: url("../images/arrow-right.png");
+}
+
+.slick-next:before {
+    color: transparent;
+}
+
+.slick-next:hover {
+    background-image: url("../images/arrow-right.png");
+    width: 41px;
+    height: 40px;
+}
+
+/*Стили для AccordeonA*/
+.ui-corner-all, .ui-corner-bottom, .ui-corner-top, .ui-corner-right, .ui-corner-right, .ui-corner-br, .ui-corner-tr {
+    border-radius: 10px;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    background: #0d6efd;
+    color: #FFFFFF;
+}
+
+/*Ширина для AccordeonA*/
+.acc {
+    max-width: 856px;
+}
+
+/*Ширина для формы*/
+.form {
+    max-width: 636px;
+}
+
+/*Цвет Light по умолчанию слишком светлый, на белом фоне слабо виден*/
+.border-light {
+    border-color: #CED4DA!important;
+}
+
+/*Кнопки AccordeonA*/
+
+.acc .ui-accordion-header {
+    position: relative;
+}
+
+.acc .ui-accordion-header-icon {
+    content: '';
+    position: absolute;
+    top: 30px;
+    right: 27px;
+    display: inline-block;
+    width: 20px;
+    height: 13px;
+    background: url(../images/Vector-down.png) 50% 50% no-repeat;
+}
+
+.acc .ui-accordion-header-active .ui-accordion-header-icon {
+    background-image: url(../images/Vector-up.png);
+}
+
+/*Блок с текстом*/
+#window {
+    display: none;
+    justify-content: center;
+}
+
+.modal-window {
+    max-width: 500px;
+}
+
